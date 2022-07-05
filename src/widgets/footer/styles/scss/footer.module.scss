@@ -1,0 +1,22 @@
+@use "./_size/footer_size_s.scss";
+@use "./_size/footer_size_m.scss";
+
+.footer__logo_is-hovered {
+  opacity: 0.8;
+}
+
+.footer__logo_is-pressed {
+  opacity: 0.6;
+}
+
+.footer__socials-item_is-hovered {
+  opacity: 0.8;
+  filter: invert(58%) sepia(83%) saturate(350%) hue-rotate(54deg)
+    brightness(92%) contrast(94%);
+}
+
+.footer__socials-item_is-pressed {
+  opacity: 0.6;
+  filter: invert(58%) sepia(83%) saturate(350%) hue-rotate(54deg)
+    brightness(92%) contrast(94%);
+}

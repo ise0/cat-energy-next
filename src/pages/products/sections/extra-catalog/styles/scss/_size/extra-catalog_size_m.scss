@@ -1,0 +1,102 @@
+.extra-catalog_size_m {
+  min-width: 710px;
+  width: 100%;
+
+  .extra-catalog__title {
+    display: flex;
+    margin: 0 0 80px;
+    white-space: nowrap;
+
+    font: 36px "Oswald";
+
+    &::after {
+      margin-top: 30px;
+      margin-left: 40px;
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: #68b738;
+    }
+    &::before {
+      margin-top: 30px;
+      margin-right: 40px;
+      content: "";
+      height: 2px;
+      min-width: 30px;
+      background-color: #68b738;
+    }
+  }
+
+  .extra-catalog__products {
+    margin: 0 auto;
+    padding: 0;
+    width: 710px;
+
+    list-style: none;
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+  }
+
+  .extra-catalog__promo {
+    height: 200px;
+    width: 710px;
+    margin: 0 auto;
+
+    background: url("/images/icon-gift.svg") no-repeat,
+      url("/images/gift-photo-tablet@2x.jpg") no-repeat;
+
+    background-position: left 90px top 58px, top;
+    background-size: 60px, cover;
+  }
+  .extra-catalog__promo-text {
+    padding-top: 70px;
+    margin-left: 423px;
+    width: 161px;
+
+    font: 16px "Arial";
+    line-height: 20px;
+    color: #fff;
+  }
+}
+
+.extra-catalog_size_m {
+  .product {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__inner {
+    height: 85px;
+    padding: 28px 38px;
+  }
+  .product__details {
+    margin-bottom: 27px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .product__name {
+    margin: 0;
+
+    text-transform: uppercase;
+    font: 20px "Oswald";
+  }
+
+  .product__package {
+    margin: 0 50px 0 auto;
+    justify-self: flex-end;
+
+    color: #444;
+    font: 16px "Arial";
+  }
+
+  .product__price {
+    margin: 0;
+
+    color: #444;
+    font: 16px "Arial";
+  }
+
+  .product__link {
+    width: 100%;
+  }
+}

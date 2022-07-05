@@ -1,0 +1,53 @@
+@use "./_size/btn-link_size_s.scss";
+@use "./_size/btn-link_size_m.scss";
+
+.btn-link {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  background-color: unset;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: 16px "Oswald";
+
+  border: none;
+  cursor: pointer;
+
+}
+
+.btn-link_icon_arrow {
+  &::after {
+    background: url("/images/icon-right-arrow-verylong.svg") no-repeat;
+    background-position: left -10px center;
+  }
+
+  &.btn-link_is-hovered::after {
+    transition-property: background-position;
+    transition-duration: 0.1s;
+    background-position: left center;
+  }
+}
+
+.btn-link_is-hovered {
+  opacity: 0.8;
+}
+
+.btn-link_is-pressed {
+  opacity: 0.2;
+}
+
+.btn-link_is-checked {
+  background-color: #ffec7f;
+}
+
+
+
+.btn-link__text {
+  white-space: nowrap;
+}
+
+@include btn-link_size_m.module();
+@include btn-link_size_s.module();

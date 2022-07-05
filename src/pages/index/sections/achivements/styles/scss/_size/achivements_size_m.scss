@@ -1,0 +1,171 @@
+.achivements_size_m {
+
+  .achivements__head-title {
+    margin: 0 0 60px;
+
+    font: 60px 'Oswald';
+  }
+
+  .achivements__text {
+    display: block;
+    margin: 0 0 54px;
+
+    font: 18px Arial;
+    line-height: 24px;
+    color: #444;
+  }
+
+  .achivements__list-wrapper {
+    margin: 0 0 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .achivements__list {
+    width: 365px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+
+  .achivements__item {
+    position: relative;
+  
+    width: 162px;
+    height: 72px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    border-bottom: none;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  
+      content: '';
+      height: 1px;
+      width: 13%;
+  
+      border-radius: 3px;
+      border-bottom: 1px solid #cdcdcd;
+    }
+    &::before {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  
+      content: '';
+      height: 1px;
+      width: 13%;
+  
+      border-radius: 3px;
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .achivements__description {
+    margin: 0;
+  
+    font: 24px 'Oswald';
+    text-transform: uppercase;
+  }
+
+  .achivements__title {
+    position: absolute;
+    top: calc(100% - 9px);
+  
+    max-width: 87px;
+  
+    padding: 0 4px;
+  
+    font: 14px Arial;
+    color: #444444;
+    text-align: center;
+    text-transform: lowercase;
+  }
+
+  .achivements__subtext {
+    width: 175px;
+    text-align: right;
+
+    font: 20px 'Oswald';
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 620px;
+  
+    &__images-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 35px;
+    }
+  
+    &__img-before {
+      height: 100%;
+      overflow: hidden;
+      left: 0;
+      position: absolute;
+    }
+    &__img-after {
+      height: 100%;
+      overflow: hidden;
+      right: 0;
+      position: absolute;
+    }
+    &__text {
+      font: 20px 'Oswald';
+      text-transform: uppercase;
+    }
+    &__input-wrapper {
+      width: 580px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__input {
+      width: 440px;
+    }
+
+    &__input[type='range'] {
+      -webkit-appearance: none;
+      height: 6px;
+      border-radius: 4px;
+      background-color: #dcdcdc;
+    }
+  
+    &__input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      cursor: grab;
+      height: 34px;
+      width: 34px;
+
+      background: url("/images/slider-control.svg") no-repeat;
+      background-size: 100%;
+    }
+
+    &__input[type="range"]::-moz-range-thumb {
+      -webkit-appearance: none;
+      cursor: grab;
+      height: 34px;
+      width: 34px;
+
+      border-radius: 50%;
+      border: none;
+      background: url("/images/slider-control.svg") no-repeat;
+      background-size: 100%;
+    }
+  }
+}

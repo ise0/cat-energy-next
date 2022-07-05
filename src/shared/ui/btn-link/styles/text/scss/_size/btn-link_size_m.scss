@@ -1,0 +1,17 @@
+@mixin module {
+  .btn-link_size_m {
+    font: 20px "Oswald";
+
+    &.btn-link_icon_ {
+      .btn-link__text {
+        margin-right: 25px;
+      }
+
+      &::after {
+        content: "";
+        width: 32px;
+        height: 38px;
+      }
+    }
+  }
+}

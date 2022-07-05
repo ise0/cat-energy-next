@@ -1,0 +1,23 @@
+@mixin module {
+  .btn-link_theme_green {
+    color: #fff;
+    background-color: #68b738;
+
+    &.btn-link_is-hovered {
+      background-color: #5eaa2f;
+    }
+
+    &.btn-link_is-pressed {
+      background-color: #5eaa2f;
+
+      .btn-link__text {
+        opacity: 0.2;
+      }
+    }
+
+    &.btn-link_is-checked {
+      color: #e4e2e2;
+      background-color: #508d2a;
+    }
+  }
+}

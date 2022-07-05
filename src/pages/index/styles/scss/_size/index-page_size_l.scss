@@ -1,0 +1,71 @@
+.index-page_size_l {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  min-width: 1280px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    width: 50%;
+    height: 700px;
+
+    background: url("/images/index-background-desktop@2x.jpg") no-repeat;
+    background-color: #64a83b;
+    background-position: left;
+    background-size: auto 100%;
+  }
+
+  .index-page__header {
+    width: 1220px;
+    margin-bottom: 34px;
+  }
+
+  .index-page__banner {
+    margin-bottom: 113px;
+    margin-right: 120px;
+  }
+
+  .index-page__objectives {
+    width: 1220px;
+    margin-bottom: 71px;
+  }
+
+  .index-page__features {
+    width: 1220px;
+    margin-bottom: 10px;
+  }
+
+  .index-page__achivements-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 75px;
+
+    background: linear-gradient(#eaeaea, #eaeaea) no-repeat;
+    background-position: bottom;
+    background-size: auto 70%;
+  }
+
+  .index-page__achivements {
+    width: 1220px;
+  }
+
+  .index-page__footer-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    background-color: #f2f2f2;
+  }
+
+  .index-page__footer {
+    width: 1220px;
+  }
+}

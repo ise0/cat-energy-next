@@ -1,0 +1,41 @@
+.header_size_m {
+  display: flex;
+  justify-content: space-between;
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__logo-inner {
+    height: 52px;
+  }
+
+  .header__nav-list {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 18px;
+  }
+
+  .header__nav-item {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 14px;
+
+    &_is-active {
+      padding-bottom: 12px;
+
+      border-bottom: 2px solid #68b738;
+    }
+
+    &_theme_white {
+      &.header__nav-item_is-active {
+        border-bottom-color: #fff;
+      }
+      .header__nav-text {
+        color: #fff;
+      }
+    }
+  }
+}

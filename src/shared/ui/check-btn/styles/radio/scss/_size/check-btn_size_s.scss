@@ -1,0 +1,32 @@
+@mixin module {
+
+  .check-btn_size_s {
+
+    .check-btn__ctrl {
+      width: 30px;
+      height: 30px;
+    }
+
+    &.check-btn_is-checked {
+      .check-btn__ctrl::after {
+        position: absolute;
+        left: (30px - 30px * 0.45) / 2;
+        top: (30px - 30px * 0.45) / 2;
+
+        content: "";
+        width: 30px * 0.45;
+        height: 30px * 0.45;
+
+        border-radius: 50%;
+        background-color: #68b738;
+      }
+    }
+
+    .check-btn__label {
+      margin-left: 15px;
+
+      color: #222;
+      font: 16px "Oswald";
+    }
+  }
+}

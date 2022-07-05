@@ -1,0 +1,32 @@
+.catalog-page_size_l {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  min-width: 1280px;
+
+  .catalog-page__header {
+    width: 1220px;
+    margin-bottom: 34px;
+  }
+
+  .catalog-page__catalog {
+    margin-bottom: 76px;
+  }
+
+  .catalog-page__extra-catalog {
+    margin-bottom: 86px;
+  }
+
+  .catalog-page__footer-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    background-color: #f2f2f2;
+  }
+
+  .catalog-page__footer {
+    width: 1220px;
+  }
+}

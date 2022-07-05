@@ -1,0 +1,106 @@
+@mixin title-line($line-top-margin) {
+  display: flex;
+  white-space: nowrap;
+
+  font: 24px "Oswald";
+  
+  &::after {
+    margin-top: $line-top-margin;
+    margin-left: 20px;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #68B738;
+  }
+}
+
+.pet-form_size_s {
+  min-width: 320px;
+  .pet-form__title {
+    margin: 0 20px 37px;
+
+    font: 36px "Oswald";
+  }
+
+  .pet-form__text {
+    margin: 0 20px 39px;
+    width: 226px;
+
+    text-transform: uppercase;
+    font: 14px "Oswald";
+    line-height: 18px;
+  }
+
+  .pet-form__pet-data {
+    margin: 0 20px 26px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .pet-form__goals {
+    padding: 20px;
+    height: 160px;
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .pet-form__contacts-title {
+    @include title-line(15px);
+
+    margin: 0 0 32px 20px;
+
+    line-height: 26px;
+  }
+
+  .pet-form__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px 26px;
+    height: 104px;
+  }
+
+  .pet-form__comment-title {
+    @include title-line(20px);
+
+    margin: 0 0 32px 20px;
+  }
+
+  .pet-form__comment {
+    margin: 0 20px 27px;
+    width: calc(100% - 40px);
+    height: 150px;
+  }
+
+  .pet-form__extra-title {
+    @include title-line(20px);
+
+    margin: 0 0 34px 20px;
+  }
+
+  .pet-form__extra-products {
+    margin: 0 20px 34px;
+    display: grid;
+    row-gap: 13px;
+  }
+
+  .pet-form__submit-btn {
+    display: flex;
+    margin: 0 auto 21px;
+    width: 280px;
+  }
+
+  .pet-form__postscript {
+    margin: 0;
+
+    text-align: center;
+    font: 14px "Arial";
+  }
+}

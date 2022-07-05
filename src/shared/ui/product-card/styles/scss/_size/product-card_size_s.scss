@@ -1,0 +1,50 @@
+.product-card_size_s {
+    position: relative;
+
+    height: 165px;
+
+  .product-card__inner {
+    height: 125px;
+    width: 280px;
+    display: flex;
+  }
+
+  .product-card__img {
+    position: relative;
+    width: 50%;
+  }
+
+  .product-card__name {
+    margin: 0 0 18px;
+    width: 76px;
+    height: 40px;
+    overflow: hidden;
+
+    color: #222;
+    font: 16px "Oswald";
+    line-height: 20px;
+  }
+
+  .product-card__features {
+    margin: 0;
+  }
+
+  .product-card__feature {
+    display: flex;
+    justify-content: space-between;
+
+    font: 12px "Arial";
+    line-height: 16px;
+  }
+  
+  .product-card__feature-value {
+    margin: 0;
+  }
+
+  .product-card__link {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+  }
+}

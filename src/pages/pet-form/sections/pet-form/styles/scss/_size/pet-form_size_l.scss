@@ -1,0 +1,150 @@
+@mixin title() {
+  position: relative;
+  margin: 0;
+  font: 36px "Oswald";
+
+  &-text {
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+
+    white-space: nowrap;
+
+    &::after {
+      content: "";
+      margin-top: 30px;
+      margin-left: 40px;
+      height: 2px;
+      width: 100%;
+
+      background-color: #68b738;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 30px;
+
+    height: 2px;
+    width: calc(50% - 610px);
+
+    background-color: #68b738;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+
+    height: 2px;
+    width: calc(50% - 650px);
+
+    background-color: #68b738;
+  }
+}
+
+.pet-form_size_l {
+  min-width: 1220px;
+  width: 100%;
+
+  .pet-form__title {
+    width: 1220px;
+    margin: 0 auto 54px;
+
+    font: 60px "Oswald";
+  }
+
+  .pet-form__text {
+    margin: 0 auto 66px;
+    width: 323px;
+    padding-right: 1220px - 323px;
+
+    text-transform: uppercase;
+    font: 20px "Oswald";
+    line-height: 30px;
+  }
+
+  .pet-form__container-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto 70px;
+  }
+
+  .pet-form__pet-data {
+    width: 568px;
+    display: grid;
+    row-gap: 20px;
+  }
+
+  .pet-form__goals {
+    padding: 27px 28px;
+    width: 512px;
+    display: grid;
+    row-gap: 13px;
+
+    border: 1px solid #d9d9d9;
+  }
+
+  .pet-form__contacts-title {
+    @include title();
+
+    margin-bottom: 76px;
+  }
+
+  .pet-form__contacts {
+    margin: 0 auto;
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 78px;
+    margin-bottom: 69px;
+  }
+
+  .pet-form__comment-title {
+    @include title();
+
+    margin-bottom: 76px;
+  }
+
+  .pet-form__comment {
+    margin: 0 auto 67px;
+    display: block;
+    width: 1220px;
+    height: 174px;
+  }
+
+  .pet-form__extra-title {
+    @include title();
+
+    margin-bottom: 57px;
+  }
+
+  .pet-form__extra-products {
+    width: 1220px;
+    margin: 0 auto 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 60px;
+  }
+
+  .pet-form__container-2{
+    display: flex;
+    align-items: center;
+    width: 1220px;
+    margin: 0 auto;
+  }
+  
+  .pet-form__submit-btn {
+    margin-right: 80px;
+    width: 568px;
+  }
+
+  .pet-form__postscript {
+    margin: 0;
+    font: 16px "Arial";
+  }
+}

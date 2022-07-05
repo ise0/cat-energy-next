@@ -1,0 +1,39 @@
+@mixin module {
+  .text-input_size_s {
+    font-size: 16px;
+
+    .text-input__input {
+      padding: 0 16px;
+      height: 42px;
+    }
+
+    &.text-input_icon_mail {
+      .input {
+        padding-right: 40px;
+      }
+
+      &::after {
+        top: 16px;
+        right: 16px;
+
+        width: 18px;
+        height: 13px;
+      }
+    }
+
+    &.text-input_icon_phone {
+
+      .input {
+        padding-right: 40px;
+      }
+
+      &::after {
+        top: 13px;
+        right: 13px;
+
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

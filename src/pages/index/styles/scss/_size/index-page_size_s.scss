@@ -1,0 +1,27 @@
+.index-page_size_s {
+  min-width: 320px;
+
+  .index-page__banner {
+    margin-bottom: 22px;
+  }
+
+  .index-page__objectives {
+    margin: 0 20px 27px;
+  }
+
+  .index-page__features {
+    margin: 0 20px 42px;
+  }
+
+  .index-page__achivements-wrapper {
+    padding: 27px 20px 25px;
+
+    background-color:#eaeaea;
+  }
+
+  .index-page__footer-wrapper {
+    padding: 0 20px;
+
+    background-color: #f2f2f2;
+  }
+}

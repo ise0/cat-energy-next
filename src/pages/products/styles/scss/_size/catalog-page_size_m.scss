@@ -1,0 +1,26 @@
+.catalog-page_size_m {
+  min-width: 768px;
+  margin-top: 24px;
+
+  .catalog-page__header {
+    margin: 0 30px 62px;
+  }
+
+  .catalog-page__catalog {
+    margin: 0 30px  68px;
+  }
+
+  .catalog-page__extra-catalog {
+    margin-bottom: 76px;
+  }
+
+  .catalog-page__partnership {
+    background-color: #f2f2f2;
+  }
+
+  .catalog-page__footer-wrapper {
+    padding: 0 30px;
+
+    background-color: #f2f2f2;
+  }
+}

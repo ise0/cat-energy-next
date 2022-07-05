@@ -1,0 +1,57 @@
+@use './_size/catalog_size_s';
+@use './_size/catalog_size_m';
+@use './_size/catalog_size_l';
+
+.catalog__pages {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.catalog__pages-list {
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.catalog__pages-item {
+    margin: 0 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-radius: 50%;
+    background-color: #e6e6e6;
+
+    &_active {
+        border: solid #68b738;
+    }
+}
+
+.catalog__pages-item-ctrl {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+
+.catalog__spin {
+    height: 568px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog__spin-inner {
+    height: 250px;
+    width: 250px;
+}

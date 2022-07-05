@@ -1,0 +1,7 @@
+@use "./normalize";
+@use "./fonts";
+@use "src/shared/lib/styles/mixins";
+
+.visually-hidden {
+  @include mixins.visually-hidden;
+}

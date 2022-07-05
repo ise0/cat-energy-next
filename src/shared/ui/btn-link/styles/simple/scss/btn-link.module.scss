@@ -1,0 +1,35 @@
+@use "./_size/btn-link_size_s.scss";
+@use "./_size/btn-link_size_m.scss";
+@use "./_theme/btn-link_theme_green.scss";
+@use "./_theme/btn-link_theme_gray.scss";
+
+.btn-link {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 15px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 16px "Oswald";
+
+    border: none;
+    cursor: pointer;
+}
+
+.btn-link_shape_oval {
+    border-radius: 100px;
+    min-width: 80px;
+}
+
+.btn-link__text {
+    white-space: nowrap;
+}
+
+
+@include btn-link_size_m.module();
+@include btn-link_size_s.module();
+@include btn-link_theme_green.module();
+@include btn-link_theme_gray.module();

@@ -1,0 +1,34 @@
+.footer_size_m {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+
+  .footer__socials-list {
+    display: grid;
+    column-gap: 36px;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    height: 63px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .footer__academy {
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font: 16px Arial;
+    color: #444444;
+  }
+
+  .footer__academy-title {
+    margin-right: 22px;
+  }
+}

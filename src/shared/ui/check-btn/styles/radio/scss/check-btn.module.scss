@@ -1,0 +1,46 @@
+@use "_size/check-btn_size_s.scss";
+@use "_size/check-btn_size_m.scss";
+
+
+.check-btn {
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+    font: 16px "Oswald";
+}
+
+.check-btn__ctrl {
+    position: relative;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+}
+
+
+.check-btn_is-hovered {
+    &.check-btn__ctrl::before {
+        border-color: #bababa;
+    }
+}
+
+.check-btn_is-pressed {
+    opacity: 0.3;
+}
+
+.check-btn__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.check-btn_is-focused {
+    .check-btn__ctrl {
+        border: 1px solid #000000;
+    }
+}
+
+@include check-btn_size_s.module();
+@include check-btn_size_m.module();

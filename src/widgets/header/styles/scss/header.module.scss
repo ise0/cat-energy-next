@@ -1,0 +1,74 @@
+@use "src/shared/lib/styles/mixins";
+@use "./_size/header_size_s.scss";
+@use "./_size/header_size_m.scss";
+@use "./_size/header_size_l.scss";
+
+.header__nav-list {
+  list-style: none;
+}
+
+.header__nav-item {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+}
+
+.header__btn {
+  position: relative;
+  overflow: hidden;
+
+  padding: 0;
+  width: 18px;
+  height: 18px;
+
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -3px;
+    left: -3px;
+    transform: rotate(135deg);
+
+    background-image: url("/images/icon-plus-mobile.svg");
+  }
+}
+
+.header_is-rolled-up {
+  .header__btn {
+    width: 24px;
+    height: 16px;
+    background-image: url("/images/icon-mobile-menu.svg");
+    &::after {
+      content: none;
+    }
+  }
+
+  .header__nav-list {
+    @include mixins.visually-hidden();
+  }
+}
+
+.header__logo_is-hovered {
+  opacity: 0.8;
+}
+
+.header__logo_is-pressed {
+  opacity: 0.6;
+}
+
+.header__nav-item_is-hovered {
+  opacity: 0.6;
+}
+
+.header__nav-item_is-pressed {
+  opacity: 0.3;
+}

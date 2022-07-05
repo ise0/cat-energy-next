@@ -1,0 +1,28 @@
+.pet-form-page_size_l {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  min-width: 1280px;
+
+  .pet-form-page__header {
+    width: 1220px;
+    margin-bottom: 34px;
+  }
+
+  .pet-form-page__form {
+    margin-bottom: 82px;
+  }
+
+  .pet-form-page__footer-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    background-color: #f2f2f2;
+  }
+
+  .pet-form-page__footer {
+    width: 1220px;
+  }
+}

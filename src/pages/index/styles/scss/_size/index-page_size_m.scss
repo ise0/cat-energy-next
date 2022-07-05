@@ -1,0 +1,34 @@
+.index-page_size_m {
+  min-width: 768px;
+  margin-top: 24px;
+
+  .index-page__header {
+    margin: 0 30px 62px;
+  }
+
+  .index-page__banner {
+    margin: 0 auto;
+  }
+
+  .index-page__objectives {
+    margin: 0 30px 45px;
+  }
+
+  .index-page__features {
+    margin: 0 30px 90px;
+  }
+
+  .index-page__achivements-wrapper {
+    padding: 0 30px 67px;
+
+    background: linear-gradient(#eaeaea, #eaeaea) no-repeat;
+    background-position: bottom;
+    background-size: auto 45%;
+  }
+
+  .index-page__footer-wrapper {
+    padding: 0 30px;
+
+    background-color: #f2f2f2;
+  }
+}

@@ -1,0 +1,27 @@
+.text-area_size_s {
+  box-sizing: border-box;
+  padding: 10px 15px;
+  resize: none;
+
+  font: 16px 'Oswald';
+
+  border: 1px solid #E7E7E7;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}
+
+.text-area_size_m {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  resize: none;
+  
+  font: 20px 'Oswald';  
+  
+  border: 1px solid #E7E7E7;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}

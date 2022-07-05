@@ -1,0 +1,24 @@
+.catalog_size_s {
+  min-width: 280px;
+
+  .catalog__title {
+    margin: 0 0 49px 20px;
+
+    font: 36px "Oswald";
+  }
+
+  .catalog__products {
+    margin: 60px 0 0;
+    padding: 0;
+    border-top: 1px solid #ebebeb;
+  }
+
+  .catalog__product {
+    padding: 19px 0 25px;
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 1px solid #ebebeb;
+  }
+
+}

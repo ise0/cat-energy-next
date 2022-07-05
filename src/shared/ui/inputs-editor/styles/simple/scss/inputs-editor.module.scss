@@ -1,0 +1,65 @@
+.inputs-editor {
+  box-sizing: border-box;
+  width: 260px;
+  padding: 0 10px 10px;
+
+  background-color: #fff;
+}
+
+.inputs-editor__title {
+  margin: 0 0 5px;
+
+  text-align: center;
+  font: 30px "Oswald";
+}
+
+.inputs-editor__inputs {
+  &::after {
+    content: '';
+
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0 5px;
+
+    background-color: rgb(0 0 0 / 15%);
+  }
+}
+
+.inputs-editor__reset {
+  display: flex;
+  margin: 0 auto 5px;
+}
+
+.inputs-editor__confirm {
+  width: 100%;
+}
+
+
+.inputs-editor__pick-many {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 5px;
+
+  list-style: none;
+}
+
+.inputs-editor__range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs-editor__range-sep {
+  display: flex;
+  align-items: center;
+  margin: 0 4px;
+
+  &::after {
+    content: '';
+    display: block;
+    background-color: #46464680;
+    width: 10px;
+    height: 2px;
+  }
+}

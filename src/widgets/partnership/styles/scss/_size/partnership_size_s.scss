@@ -1,0 +1,34 @@
+.partnership_size_s {
+  .partnership__card {
+    padding: 28px 19px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .partnership__title {
+    width: 140px;
+    margin: 0;
+
+    font: 16px "Oswald";
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #111111;
+  }
+
+  .partnership__address {
+    width: 140px;
+    margin: 0;
+
+    font: 14px Arial;
+    line-height: 20px;
+    color: #444444;
+  }
+  .partnership__address-sep {
+    display: none;
+  }
+
+  .partnership__map {
+    width: 100%;
+    height: 362px;
+  }
+}
